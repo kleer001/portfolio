@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Clear Menser · Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@300;400;500;600&display=swap" />
+<link rel="stylesheet" href="styles-v2.css?v=6" />
+</head>
+<body>
+
+<main id="app" class="app">
+
+  <!-- ============ TOP CHROME ============ -->
+  <header class="chrome">
+    <div class="chrome-l">
+      <span class="chrome-ttl">Clear Menser</span>
+      <span class="chrome-ver">kleer001 · technical artist &amp; pipeline builder</span>
+    </div>
+    <nav class="chrome-nav">
+      <a href="#hero" class="nav-dot" data-k="1">About</a>
+      <a href="#dccai" class="nav-dot" data-k="2">DCC + AI</a>
+      <a href="#dcc" class="nav-dot" data-k="3">DCC</a>
+      <a href="#llm" class="nav-dot" data-k="4">LLM</a>
+      <a href="#games" class="nav-dot" data-k="5">Games</a>
+    </nav>
+    <div class="chrome-r">
+      <span class="status-dot"></span>
+      <span>Available for contract</span>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="ident" data-screen-label="01 Hero">
+    <div class="ident-grid">
+      <div class="ident-main">
+        <h1 class="name">
+          <span class="name-1">Clear Menser</span>
+          <span class="name-2">Technical artist &amp; pipeline builder <span class="name-handle">(kleer001)</span></span>
+        </h1>
+
+        <div class="hero-lines">
+          <p class="hero-line"><span class="hl-k">Work</span>AI-assisted tools for DCC software — Blender, Houdini, Nuke, Natron, After Effects.</p>
+          <p class="hero-line"><span class="hl-k">Method</span>Architecture, domain knowledge, and taste are mine. Implementation leans heavily on Claude; I don't pretend otherwise.</p>
+          <p class="hero-line"><span class="hl-k">Reach</span><a href="/cdn-cgi/l/email-protection#13787f767661232322707c777653747e727a7f3d707c7e"><span class="__cf_email__" data-cfemail="8ae1e6efeff8bababbe9e5eeefcaede7ebe3e6a4e9e5e7">[email&#160;protected]</span></a> · <a href="https://github.com/kleer001" target="_blank" rel="noopener">github.com/kleer001</a> · open to contract work.</p>
+        </div>
+      </div>
+
+      <div class="galapagos">
+        <canvas id="gal" width="360" height="480" aria-label="Live evolutionary art — from galapagos3"></canvas>
+        <div class="gal-cap">
+          <span>Live · <a href="https://github.com/kleer001/galapagos3" target="_blank" rel="noopener">galapagos3</a></span>
+          <button id="galReroll" title="Breed new image">↻ reroll</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 1. DCC + AI ============ -->
+  <section id="dccai" class="section" data-screen-label="02 DCC and AI">
+    <div class="sec-head">
+      <div>
+        <span class="sec-num">01</span>
+        <h2>DCC + AI tools</h2>
+      </div>
+      <div class="sec-tools muted">
+        <span>The distinctive lane</span>
+      </div>
+    </div>
+
+    <div class="repo-grid">
+      <!-- MCP quartet: one hero card, four targets -->
+      <article class="repo hero-card">
+        <div class="r-top">
+          <span class="r-id">Hero · MCP Quartet</span>
+          <span class="r-pin">One bet, four targets</span>
+        </div>
+        <h3 class="r-name">Model Context Protocol servers for Blender, Houdini, Nuke, and Natron</h3>
+        <p class="r-desc">
+          Four MCP servers that expose each application's Python API as structured tools an LLM can call
+          directly. The Nuke and Houdini builds add a persistent memory layer, <code>CLAUDE.md</code>
+          behavioral rules, BM25-based RAG over a growing best-practices file, and bidirectional events —
+          so the assistant gets smarter the more you use it, instead of starting from scratch each session.
+          blender-mcp currently surfaces <b>175 tools across 25 subsystems</b>.
+        </p>
+
+        <div class="trilogy quad">
+          <a class="tri-card" href="https://github.com/kleer001/blender-mcp" target="_blank" rel="noopener">
+            <span class="tri-dot"></span>
+            <b>blender-mcp</b>
+            <span class="bubble">175 tools · 25 subsystems</span>
+            <span>Blender — geometry, shading, animation, rigging, compositing, VSE.</span>
+            <em>github.com/kleer001/blender-mcp ↗</em>
+          </a>
+          <a class="tri-card" href="https://github.com/kleer001/houdini-mcp" target="_blank" rel="noopener">
+            <span class="tri-dot"></span>
+            <b>houdini-mcp</b>
+            <span class="bubble">persistent memory · BM25 RAG</span>
+            <span>SideFX Houdini — <code>CLAUDE.md</code> behavioral rules, bidirectional events.</span>
+            <em>github.com/kleer001/houdini-mcp ↗</em>
+          </a>
+          <a class="tri-card" href="https://github.com/kleer001/nuke-mcp" target="_blank" rel="noopener">
+            <span class="tri-dot"></span>
+            <b>nuke-mcp</b>
+            <span class="bubble">Nuke 15+ · NukeX gated tools</span>
+            <span>Foundry Nuke — discovery, headless mode, Skills for multi-step workflows.</span>
+            <em>github.com/kleer001/nuke-mcp ↗</em>
+          </a>
+          <a class="tri-card" href="https://github.com/kleer001/natron-mcp" target="_blank" rel="noopener">
+            <span class="tri-dot"></span>
+            <b>natron-mcp</b>
+            <span class="bubble">1st and only Natron MCP</span>
+            <span>Natron — open-source node-based compositor. Same MCP surface, free tool.</span>
+            <em>github.com/kleer001/natron-mcp ↗</em>
+          </a>
+        </div>
+
+        <div class="r-foot">
+          <span class="r-lang">Python · MCP · FastMCP · DCC APIs</span>
+          <span class="r-stats"><span>Shared patterns across 4 DCCs · destructive-tool guards in code</span></span>
+        </div>
+      </article>
+
+      <article class="repo wide">
+        <div class="r-top">
+          <span class="r-id">funkworks</span>
+          <span class="r-pin">Pipeline story</span>
+        </div>
+        <h3 class="r-name">funkworks</h3>
+        <p class="r-desc">
+          Reddit-mined pain points → Claude-classified into solvable problems → shipped as small Blender plugins.
+          The meta-pipeline is the product, not any single plugin — a reproducible path from
+          &ldquo;people complain about X&rdquo; to &ldquo;here is a tool that fixes X&rdquo;.
+        </p>
+        <div class="r-foot">
+          <span class="r-lang">Python · Blender · Claude</span>
+          <span class="r-stats"><a href="https://github.com/kleer001/funkworks" target="_blank" rel="noopener">repo ↗</a></span>
+        </div>
+      </article>
+
+      <article class="repo wide">
+        <div class="r-top">
+          <span class="r-id">shot-gopher</span>
+          <span class="r-pin">Opinionated</span>
+        </div>
+        <h3 class="r-name">shot-gopher</h3>
+        <p class="r-desc">
+          ML-assisted VFX shot processing built around an explicitly destructive workflow: every stage
+          replaces the previous output — no appending, no versioning, no &ldquo;keep both.&rdquo; Fewer
+          knobs, fewer safety nets, shots come out the other end. For one-person and small-team pipelines
+          where speed beats reversibility.
+        </p>
+        <div class="r-foot">
+          <span class="r-lang">Python · ML · VFX</span>
+          <span class="r-stats"><a href="https://github.com/kleer001/shot-gopher" target="_blank" rel="noopener">repo ↗</a></span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ 2. DCC (no AI) ============ -->
+  <section id="dcc" class="section" data-screen-label="03 DCC">
+    <div class="sec-head">
+      <div>
+        <span class="sec-num">02</span>
+        <h2>DCC tools</h2>
+      </div>
+      <div class="sec-tools muted"><span>Tools for humans</span></div>
+    </div>
+
+    <div class="repo-grid">
+      <article class="repo wide">
+        <div class="r-top">
+          <span class="r-id">houdini_remote_render</span>
+          <span class="r-pin">Portable</span>
+        </div>
+        <h3 class="r-name">houdini_remote_render</h3>
+        <p class="r-desc">
+          Digital assets plus cross-platform bootstrap scripts that package a Houdini scene into a
+          USDZ and ship it to a render host without manual rigging. Designed to survive being handed
+          to a non-TD.
+        </p>
+        <div class="r-foot">
+          <span class="r-lang">HDA · Python · USDZ</span>
+          <span class="r-stats"><a href="https://github.com/kleer001/houdini_remote_render" target="_blank" rel="noopener">repo ↗</a></span>
+        </div>
+      </article>
+
+      <article class="repo wide">
+        <div class="r-top">
+          <span class="r-id">windows_error_ae</span>
+          <span class="r-pin">Artist-usable</span>
+        </div>
+        <h3 class="r-name">windows_error_ae</h3>
+        <p class="r-desc">
+          After Effects and Nuke plugin. Seeded randomness, deterministic glitch aesthetic; tuned so
+          artists keep control of the result instead of rolling the dice every frame.
+        </p>
+        <div class="r-foot">
+          <span class="r-lang">AE · Nuke · seeded RNG</span>
+          <span class="r-stats"><a href="https://github.com/kleer001/windows_error_ae" target="_blank" rel="noopener">repo ↗</a></span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ 3. LLM & Agent tooling ============ -->
+  <section id="llm" class="section" data-screen-label="04 LLM">
+    <div class="sec-head">
+      <div>
+        <span class="sec-num">03</span>
+        <h2>LLM &amp; agent tooling</h2>
+      </div>
+      <div class="sec-tools muted"><span>Procedural text, harnesses, skills</span></div>
+    </div>
+
+    <div class="repo-grid">
+      <article class="repo">
+        <div class="r-top">
+          <span class="r-id">Text_Loom</span>
+          <span class="r-pin">★ 19</span>
+        </div>
+        <h3 class="r-name">Text_Loom</h3>
+        <p class="r-desc">
+          TUI node graph for procedural editing of text with LLMs. Nodes for querying local LLMs,
+          looping, pattern-based sectioning, and parameter-driven transforms — text flows from one node
+          to the next. Auto-detects local LLM installs with fallbacks.
+        </p>
+        <div class="r-foot">
+          <span class="r-lang">Python · TUI · local LLM</span>
+          <span class="r-stats"><a href="https://github.com/kleer001/Text_Loom" target="_blank" rel="noopener">repo ↗</a></span>
+        </div>
+      </article>
+
+      <article class="repo">
+        <div class="r-top">
+          <span class="r-id">Salad_Loom</span>
+          <span class="r-pin">Companion</span>
+        </div>
+        <h3 class="r-name">Salad_Loom</h3>
+        <p class="r-desc">Absurdist companion to Text_Loom. Same graph engine, different intent — text as cooking, not code.</p>
+        <div class="r-foot">
+          <span class="r-lang">Python · TUI</span>
+          <span class="r-stats"><a href="https://github.com/kleer001/Salad_Loom" target="_blank" rel="noopener">repo ↗</a></span>
+        </div>
+      </article>
+
+      <article class="repo">
+        <div class="r-top">
+          <span class="r-id">claude-slash-bob</span>
+          <span class="r-pin">Skill</span>
+        </div>
+        <h3 class="r-name">claude-slash-bob</h3>
+        <p class="r-desc">Claude Code skill for session handoff. Compresses a long working session into a clean brief a fresh session can pick up.</p>
+        <div class="r-foot">
+          <span class="r-lang">Claude Code · prompt design</span>
+          <span class="r-stats"><a href="https://github.com/kleer001/claude-slash-bob" target="_blank" rel="noopener">repo ↗</a></span>
+        </div>
+      </article>
+
+      <article class="repo">
+        <div class="r-top">
+          <span class="r-id">desloppify</span>
+          <span class="r-pin">Harness</span>
+        </div>
+        <h3 class="r-name">desloppify</h3>
+        <p class="r-desc">Agent harness for code cleanup. Keeps the model focused on style and structure passes instead of rewriting intent.</p>
+        <div class="r-foot">
+          <span class="r-lang">Agent · code quality</span>
+          <span class="r-stats"><a href="https://github.com/kleer001/desloppify" target="_blank" rel="noopener">repo ↗</a></span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ 4. Games & Experiments ============ -->
+  <section id="games" class="section" data-screen-label="05 Games">
+    <div class="sec-head">
+      <div>
+        <span class="sec-num">04</span>
+        <h2>Games &amp; experiments</h2>
+      </div>
+      <div class="sec-tools muted"><span>Side quests that taught something</span></div>
+    </div>
+
+    <div class="repo-grid">
+      <article class="repo wide">
+        <div class="r-top">
+          <span class="r-id">galapagos3</span>
+          <span class="r-pin">Reference: Karl Sims</span>
+        </div>
+        <h3 class="r-name">galapagos3</h3>
+        <p class="r-desc">
+          Rust + wgpu evolutionary art in the Karl Sims lineage. Genomes drive procedural images; a
+          fitness pass (manual and automated) selects what lives into the next generation.
+        </p>
+        <p class="disclosure">
+          <b>Disclosure.</b> Rust implementation is heavily Claude-assisted; evolutionary design and
+          Sims-lineage framing are mine.
+        </p>
+        <div class="r-foot">
+          <span class="r-lang">Rust · wgpu · evolutionary art</span>
+          <span class="r-stats"><a href="https://github.com/kleer001/galapagos3" target="_blank" rel="noopener">repo ↗</a></span>
+        </div>
+      </article>
+
+      <article class="repo">
+        <div class="r-top"><span class="r-id">passtally</span><span class="r-pin">Tribute</span></div>
+        <h3 class="r-name">passtally</h3>
+        <p class="r-desc">Browser-based tribute to the Passtally board game. Click-and-drag tiles, pass-counting, the expected edges.</p>
+        <div class="r-foot"><span class="r-lang">JS · browser</span><span class="r-stats"><a href="https://github.com/kleer001/passtally" target="_blank" rel="noopener">repo ↗</a></span></div>
+      </article>
+
+      <article class="repo">
+        <div class="r-top"><span class="r-id">BrainMaze</span><span class="r-pin">Educational</span></div>
+        <h3 class="r-name">BrainMaze</h3>
+        <p class="r-desc">pygame educational maze game. Small enough for a classroom to read end-to-end.</p>
+        <div class="r-foot"><span class="r-lang">Python · pygame</span><span class="r-stats"><a href="https://github.com/kleer001/BrainMaze" target="_blank" rel="noopener">repo ↗</a></span></div>
+      </article>
+
+      <article class="repo">
+        <div class="r-top"><span class="r-id">arithmeticVerisimilitude</span><span class="r-pin">Explorer</span></div>
+        <h3 class="r-name">arithmeticVerisimilitude</h3>
+        <p class="r-desc">Combinatorial arithmetic explorer — generates and scores expressions that <em>feel</em> true.</p>
+        <div class="r-foot"><span class="r-lang">Python · combinatorics</span><span class="r-stats"><a href="https://github.com/kleer001/arithmeticVerisimilitude" target="_blank" rel="noopener">repo ↗</a></span></div>
+      </article>
+
+      <article class="repo">
+        <div class="r-top"><span class="r-id">2018NaNoGenMo</span><span class="r-pin">Generative</span></div>
+        <h3 class="r-name">2018NaNoGenMo</h3>
+        <p class="r-desc">Procedural novel generation entry. Shipped with a readable output, not just structure.</p>
+        <div class="r-foot"><span class="r-lang">Python · generative text</span><span class="r-stats"><a href="https://github.com/kleer001/2018NaNoGenMo" target="_blank" rel="noopener">repo ↗</a></span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="foot">
+      <div class="foot-main">
+      <span class="foot-name">Clear Menser</span>
+      <span class="sep">·</span>
+      <a href="https://github.com/kleer001" target="_blank" rel="noopener">github.com/kleer001</a>
+      <span class="sep">·</span>
+      <a href="/cdn-cgi/l/email-protection#87ecebe2e2f5b7b7b6e4e8e3e2c7e0eae6eeeba9e4e8ea"><span class="__cf_email__" data-cfemail="5a31363f3f286a6a6b39353e3f1a3d373b333674393537">[email&#160;protected]</span></a>
+    </div>
+    <div class="foot-note">
+      Available for contract DCC-pipeline and AI-tools work. Out of scope: staff SWE, modeling, compositing, traditional VFX artistry.
+    </div>
+  </footer>
+</main>
+
+<!-- ============ TWEAKS ============ -->
+<div id="tweaks" class="tweaks" hidden>
+  <div class="tw-head">
+    <span>Tweaks</span>
+    <button id="twClose" class="tw-x">✕</button>
+  </div>
+  <label class="tw-row">
+    <span>Accent</span>
+    <div class="tw-swatches" id="twAccents">
+      <button data-accent="navy"  class="sw" style="--c:#1a3a6b"></button>
+      <button data-accent="ocean" class="sw" style="--c:#2c6fb5"></button>
+      <button data-accent="slate" class="sw" style="--c:#445a7a"></button>
+      <button data-accent="teal"  class="sw" style="--c:#1f5e5e"></button>
+      <button data-accent="ink"   class="sw" style="--c:#0e1b33"></button>
+    </div>
+  </label>
+  <label class="tw-row">
+    <span>Density</span>
+    <input id="twDensity" type="range" min="0.9" max="1.2" step="0.01" />
+  </label>
+  <label class="tw-row">
+    <span>Serif display</span>
+    <input id="twSerif" type="checkbox" />
+  </label>
+  <label class="tw-row">
+    <span>Paper texture</span>
+    <input id="twPaper" type="checkbox" />
+  </label>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+    "accent": "ocean",
+    "density": 1,
+    "serif": true,
+    "paper": true
+  }/*EDITMODE-END*/;
+</script>
+<script src="galapagos.js?v=5"></script>
+<script src="app-v2.js?v=3"></script>
+</body>
+</html>
