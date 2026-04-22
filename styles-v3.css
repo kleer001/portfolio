@@ -415,6 +415,11 @@ body[data-paper="1"] {
 .repo.wide { grid-column: span 6; }
 .repo:hover { background: var(--paper-2); }
 
+.r-mid { display: flex; flex: 1; min-height: 0; }
+.r-mid .r-desc { flex: 1; }
+.r-mascot { width: 20%; flex-shrink: 0; align-self: flex-end; display: flex; justify-content: center; overflow: visible; padding: 0 4px 0 0; }
+.r-mascot img { max-width: 100%; max-height: 220px; object-fit: contain; object-position: bottom center; }
+
 @media (max-width: 1000px) { .repo { grid-column: span 6; } .repo.wide { grid-column: span 12; } .repo.hero-card { grid-column: span 12; } }
 @media (max-width: 640px)  { .repo, .repo.wide, .repo.hero-card { grid-column: span 12; } }
 
@@ -479,6 +484,7 @@ body[data-paper="1"] {
   position: relative;
 }
 .tri-card:hover { background: var(--paper-3); }
+.tri-logo { position: absolute; top: 4px; right: 4px; width: 64px; height: 64px; pointer-events: none; opacity: 0.85; }
 .tri-dot { width: 7px; height: 7px; background: var(--ink-2); border-radius: 50%; flex-shrink: 0; }
 .tri-card b {
   font-family: var(--f-mono); font-weight: 600; font-size: 12px;
@@ -500,16 +506,10 @@ body[data-paper="1"] {
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   width: 10px; height: 10px;
-  background: var(--ink);
+  background: transparent;
   z-index: 2;
   pointer-events: none;
 }
-.quartet-cross::before,
-.quartet-cross::after {
-  content: ""; position: absolute; background: var(--paper-2);
-}
-.quartet-cross::before { top: 50%; left: 0; right: 0; height: 1px; transform: translateY(-50%); }
-.quartet-cross::after  { left: 50%; top: 0; bottom: 0; width: 1px; transform: translateX(-50%); }
 
 /* DISCLOSURE */
 .disclosure {
