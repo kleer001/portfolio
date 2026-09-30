@@ -11,7 +11,7 @@ The page is organised as a drawing set. Four sheets:
 | A-01 | DCC + AI tools | MCP servers for Blender, Houdini, Nuke and Natron; usd_mcp_master; image_gen |
 | A-02 | DCC tools | houdini_remote_render, funkworks, shot-gopher |
 | A-03 | LLM & agent tooling | Text_Loom (with Salad_Loom), the Claude Code skills, meta_theory, ccwork, bird_brain |
-| A-04 | Games & experiments | galapagos3, interlingua, the browser instruments, parts_disco, treasure_trash, override, three_pm, finding_numbers, passtally |
+| A-04 | Games & experiments | galapagos3, the browser instruments, parts_disco, finding_numbers, passtally |
 
 ## How it's built
 

@@ -59,9 +59,8 @@ No puffy titles like "agent infrastructure engineer." Genre-appropriate, specifi
 Every card on this sheet carries a live link a visitor can open or play.
 
 - **galapagos3** — Rust + wgpu evolutionary art, Karl Sims reference. Also the hero's live background.
-- **interlingua** — conlang built from a transformer's concept detectors.
 - **Browser instruments** — drone_flute_synth and dub_synth on one card, with music_loom as their workbench.
-- **parts_disco**, **treasure_trash**, **override**, **three_pm**, **finding_numbers**, **passtally** — browser games.
+- **parts_disco**, **finding_numbers**, **passtally** — browser games.
 
 ### 5. Footer
 
@@ -83,6 +82,7 @@ Every card on this sheet carries a live link a visitor can open or play.
 - BrainMaze, arithmeticVerisimilitude, 2018NaNoGenMo — too old or thin next to the playable work.
 - desloppify — close fork, not original work.
 - glyph_tracer — its README depends on a private repo.
+- interlingua, treasure_trash, override, three_pm — not finished.
 - windows_error_ae — not featured.
 - application_summary — document AI, outside the page's scope.
 
