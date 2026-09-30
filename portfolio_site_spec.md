@@ -38,29 +38,30 @@ No puffy titles like "agent infrastructure engineer." Genre-appropriate, specifi
 
 ### 1. DCC + AI Tools (the distinctive lane)
 
-- **MCP trilogy** — nuke-mcp, houdini-mcp, blender-mcp presented as ONE hero unit. One wide card, three links inside. Mention the 175-tool figure for blender-mcp.
-- **funkworks** — "Reddit-mined pain points → Claude-classified → shipped plugins." The meta-pipeline is the story, not any single plugin.
-- **shot-gopher** — ML-assisted VFX shot processing with opinionated destructive workflow.
+- **MCP quartet** — blender-mcp, houdini-mcp, nuke-mcp, natron-mcp presented as ONE hero unit. One wide card, four links inside. Give each server's tool count where its repo states one consistently (175 for blender-mcp).
+- **usd_mcp_master** — OpenUSD composition debugger: which file is winning, and why. MCP server for agents, CLI for people.
+- **image_gen** — local image and video generation on one 24 GB GPU, driven by a Claude Code agent.
 
-### 2. DCC Tools (no AI)
+### 2. DCC Tools (tools for humans)
 
 - **houdini_remote_render** — HDAs + cross-platform bootstrap scripts. USDZ packaging for portable renders.
-- **windows_error_ae** — AE + Nuke plugin with seeded randomness. Glitch aesthetic, artist-usable.
+- **funkworks** — "forum-mined pain points → Claude-classified → shipped addons." The meta-pipeline is the story, not any single plugin.
+- **shot-gopher** — automated VFX ingest. Lead with what comes out: depth, roto, clean plates, camera solves.
 
 ### 3. LLM & Agent Tooling
 
-- **Text_Loom** — TUI node graph for procedural LLM text editing. 19 stars.
-- **Salad_Loom** — absurdist companion.
-- **claude-slash-bob** — Claude Code skill for session handoff.
-- **desloppify** — agent harness for code cleanup.
+- **Text_Loom** — node graph for procedural LLM text editing, five front ends. Salad_Loom shares its card.
+- **Claude Code skills** — one card, one line per skill, each linked to its repo.
+- **meta_theory**, **ccwork**, **bird_brain** — one card each.
 
 ### 4. Games & Experiments
 
-- **galapagos3** — Rust + wgpu evolutionary art, Karl Sims reference. **Disclose per-card:** "Rust implementation heavily Claude-assisted; evolutionary design and Sims-lineage framing are mine."
-- **passtally** — browser-based board game tribute.
-- **BrainMaze** — pygame educational maze game.
-- **arithmeticVerisimilitude** — combinatorial arithmetic explorer.
-- **2018NaNoGenMo** — procedural novel generation.
+Every card on this sheet carries a live link a visitor can open or play.
+
+- **galapagos3** — Rust + wgpu evolutionary art, Karl Sims reference. Also the hero's live background.
+- **interlingua** — conlang built from a transformer's concept detectors.
+- **Browser instruments** — drone_flute_synth and dub_synth on one card, with music_loom as their workbench.
+- **parts_disco**, **treasure_trash**, **override**, **three_pm**, **finding_numbers**, **passtally** — browser games.
 
 ### 5. Footer
 
@@ -68,11 +69,22 @@ No puffy titles like "agent infrastructure engineer." Genre-appropriate, specifi
 - Email (published directly, not behind a form).
 - Optional availability/capacity note.
 
+## Selection rules
+
+- **Scope stays DCC-adjacent.** The four sheets above are the whole page. Work outside them — document AI, OCR, general automation — does not get a card.
+- **Public repos only.** A card links a repo a visitor can open.
+- **Forks.** A fork that stays close to its upstream does not get a card. A fork that has grown into its own project can.
+
 ## Cut list (do not link)
 
 - hello-world, sandbox-repo, ReadyToStart — throwaway.
 - PotionWorld, WHAM, plasma-5-sbbclock — too thin to justify card space.
 - mpea, affirmations, talk-like-an-X, cuesubplot — fine repos, dilute the pitch.
+- BrainMaze, arithmeticVerisimilitude, 2018NaNoGenMo — too old or thin next to the playable work.
+- desloppify — close fork, not original work.
+- glyph_tracer — its README depends on a private repo.
+- windows_error_ae — not featured.
+- application_summary — document AI, outside the page's scope.
 
 ## Content per project card
 
@@ -83,18 +95,18 @@ No puffy titles like "agent infrastructure engineer." Genre-appropriate, specifi
 
 No long descriptions. Repo READMEs carry the detail.
 
-## Design decisions still open
+## Design decisions
 
-1. **Stack.** Plain HTML/CSS vs Astro vs Jekyll. Leaning plain static HTML + one CSS file — zero maintenance, matches the restrained tone, ships today.
-2. **Headliner weight.** MCP trilogy as one wide card with three repo links vs three equal cards. "One bet, three targets" reads stronger than repetition — leaning one wide card.
-3. **AI-disclosure placement.** Hero line, about blurb, or per-project only. Leaning: one hero line ("Implementation leans heavily on Claude; I don't pretend otherwise") plus per-project call-outs where the repo wouldn't exist without heavy AI help (galapagos3 most obviously).
-4. **Visual reference.** No reference established. Worth browsing BenMcEwan's Nuke page, Platige devs' personal sites, various github.io pages to find a restraint level you like.
-5. **Images / demos.** galapagos3 and windows_error_ae have strong visuals; funkworks has pipeline-diagram potential; MCP trilogy is harder to visualize. A short looping gif per card where one exists; skip where it would be forced.
-6. **Contact.** Published email vs form. Lower friction wins for freelance — publish the email.
+1. **Stack.** Plain static HTML + one CSS file. No build step.
+2. **Headliner weight.** MCP quartet as one wide card with four repo links — "one bet, four targets."
+3. **AI-disclosure placement.** One hero line ("Implementation leans heavily on Claude; I don't pretend otherwise"). No per-card call-outs.
+4. **Visual reference.** Architectural drawing set: sheets, title blocks, room tags.
+5. **Images / demos.** Live links where a project runs in the browser; mascots on funkworks and shot-gopher. Looping gifs per card are still open.
+6. **Contact.** Published email. Lower friction wins for freelance.
 
 ## What this page is NOT
 
 - A resume.
 - A blog.
-- A marketplace/storefront. (If funkworks or windows_error_ae go commercial, those live on Superhive / Gumroad / Foundry Marketplace / Orbolt and are linked from the portfolio.)
+- A marketplace/storefront.
 - A "hire me for anything" page. Staff-SWE work, modeling, compositing, and traditional VFX artistry are explicitly out of scope.

@@ -8,10 +8,10 @@ The page is organised as a drawing set. Four sheets:
 
 | Sheet | Section | What's in it |
 |---|---|---|
-| A-01 | DCC + AI tools | MCP servers for Blender, Houdini, Nuke and Natron |
+| A-01 | DCC + AI tools | MCP servers for Blender, Houdini, Nuke and Natron; usd_mcp_master; image_gen |
 | A-02 | DCC tools | houdini_remote_render, funkworks, shot-gopher |
-| A-03 | LLM & agent tooling | Text_Loom, Salad_Loom, claude-slash-bob |
-| A-04 | Games & experiments | galapagos3, passtally, BrainMaze, arithmeticVerisimilitude, 2018NaNoGenMo |
+| A-03 | LLM & agent tooling | Text_Loom (with Salad_Loom), the Claude Code skills, meta_theory, ccwork, bird_brain |
+| A-04 | Games & experiments | galapagos3, interlingua, the browser instruments, parts_disco, treasure_trash, override, three_pm, finding_numbers, passtally |
 
 ## How it's built
 
@@ -22,12 +22,9 @@ index.html            the whole page — every project entry is inline markup
 styles-v3.css         the current stylesheet
 app-v3.js             navigation, sheet switching, accent-colour swatches
 galapagos.js          the animated background canvas
-logos/                per-application SVG icons used in the A-01 and A-02 cards
+logos/                SVG icons and PNG mascots used in the A-01 and A-02 cards
 portfolio_site_spec.md  purpose, audience, and voice — read this before editing copy
 ```
-
-`portfolio v2.html`, `styles-v2.css`, and `app-v2.js` are the previous design, kept for
-reference. The live site is v3.
 
 GitHub Pages serves `main` from the repository root, so a push to `main` is a deploy.
 
@@ -50,5 +47,6 @@ surrounding structure; the CSS keys off those class names.
 Read `portfolio_site_spec.md` first. It sets who the page is for and how it should sound,
 and it is easy to write a card that is accurate and still off-voice.
 
-Screenshots are not committed — `.gitignore` excludes `*.png`, so the working directory
-holds design iterations that never reach the repo.
+Screenshots are not committed — `.gitignore` excludes `*.png` everywhere except `logos/`,
+so the working directory holds design iterations that never reach the repo. An image a card
+uses goes in `logos/`.

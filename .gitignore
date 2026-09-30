@@ -210,3 +210,7 @@ __marimo__/
 .mcp.json
 .playwright-mcp/
 *.png
+
+# Card images ship with the page
+!logos/*.png
+tmp/
